@@ -1,0 +1,37 @@
+.accordion {
+  &-button {
+    color: $muted;
+    font-size: 1rem;
+    border-bottom: 1px solid $muted;
+    padding: 1rem 0.75rem;
+
+    &::after {
+      content: ">";
+      font-size: 1.5rem;
+      background-image: none;
+      height: auto;
+      line-height: 1;
+      color: $muted;
+      font-family: $base-font;
+    }
+    &:not(.collapsed) {
+      background-color: transparent;
+      color: $primary;
+      box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0%);
+      &::after {
+        background-image: none;
+        transform: rotate(90deg);
+        color: $secondary;
+      }
+    }
+    &:focus {
+      box-shadow: 0 0 0 0rem rgba(68, 97, 121, 0);
+    }
+  }
+  &-item {
+    border: 0;
+  }
+  &-body {
+    padding: 1rem 0.75rem;
+  }
+}

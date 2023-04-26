@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="assets/styles/vendors/videojs/video-js.css" rel="stylesheet" />
+  <link href="assets/styles/style.css" rel="stylesheet" />
+  <title>Altron</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <header id="header"></header>
+  <section class="hero-banner hero-banner-alt">
+    <div class="container">
+      <div class="banner-slide" style="background-image: url(assets/images/about-banner.jpg)">
+        <div class="banner-container">
+          <div class="card-container">
+            <div class="banner-header">
+              <div class="banner-header-content">
+                <h1 class="secondary-font">Contact Us</h1>
+                <h2 class="text-secondary-color">Lets Connect</h2>
+              </div>
+            </div>
+            <a href="introduction.html" class="chat-bot"><i class="icon-chatbot"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card-section card-section-top-md">
+    <div class="container">
+      <div class="card-container">
+        <div class="row form-box">
+          <div class="col-lg-7 bg-white">
+            <div class="card-blocks">
+              <div class="row g-2">
+                <div class="col-12 d-flex">
+                  <input class="form-control title-form" id="title" placeholder="Mss" />
+                  <input class="form-control" id="name" placeholder="Name and Surname" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="company" placeholder="Company" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="job" placeholder="Job Title" />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" id="email" placeholder="Email*" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="phone" placeholder="Phone" />
+                </div>
+                <div class="col-12">
+                  <p class="sm-text text-secondary-color">
+                    Communication Type
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                          value="option1" /><label class="form-check-label" for="inlineRadio1">E-mail</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                          value="option2" /><label class="form-check-label" for="inlineRadio2">Whatsapp</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                          value="option3" /><label class="form-check-label" for="inlineRadio3">SMS</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="operation" placeholder="Altron Operations" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="preference"
+                    placeholder="Personalise your Communication Preferences" />
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" id="message" placeholder="Leave your message here" rows="5"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="conset" /><label
+                      class="form-check-label xs-text" for="conset">By ticking this box, you provide consent to receive
+                      electronic marketing communication on Altron Solutions
+                      and Services and the solutions of our key strategic
+                      partners. You may personalize your subscriptions based
+                      on your interests.</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="privacy" /><label
+                      class="form-check-label xs-text" for="privacy">This form collects your contact information so
+                      that we
+                      are able to respond to your query. See our Privacy
+                      policy for the full story on how we protect and manage
+                      your submitted data.</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <img src="assets/images/recaptcha.jpg" alt="" />
+                </div>
+                <div class="col-12">
+                  <a href="#" class="btn btn-secondary mt-2 w-100">Submit Information</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 bg-primary">
+            <div class="card-blocks">
+              <div class="sub-heading text-white-color text-center">
+                HOW CAN WE HELP
+              </div>
+              <h2 class="secondary-font text-center fw-bold title-text-xl">
+                <span class="text-secondary-color">NEED</span>
+                <span class="text-white-color">MORE</span>
+                <span class="text-white-color">INFO?</span>
+              </h2>
+              <div class="my-4 text-start">
+                <p class="text-secondary-color fw-bold">Operating Hours:</p>
+                <p class="text-white-color">Monday - Friday 9:00 - 17:00</p>
+                <p class="text-secondary-color fw-bold">Physical Address:</p>
+                <p class="text-white-color">
+                  Head-office<br />Altron Business Park<br />20 Woodlands
+                  Drive<br />Woodlands Office Park<br />Woodmead<br />2191
+                </p>
+              </div>
+              <div>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                  class="btn btn-outline-secondary text-white-color w-100">
+                  Visit the Preference Centre
+                </button>
+              </div>
+              <div class="ratio ratio-16x9 map-frame">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.0879032667426!2d28.08090911564!3d-26.063383464594228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e22ca53e4bd%3A0xb60a7a40065d0938!2sAltron%20Business%20Park!5e0!3m2!1sen!2sin!4v1630499652637!5m2!1sen!2sin"
+                  style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="
+        full-banner-section full-banner-section-md
+        bg-tritary
+        event-card-section
+      " style="background-image: none">
+    <div class="container">
+      <div class="sub-heading text-white-color text-center">Resources</div>
+      <h2 class="secondary-font mt-3 text-center fw-bold title-text-xl">
+        <span class="text-secondary-color">WHERE</span>
+        <span class="text-white-color">CAN YOU</span>
+        <span class="text-white-color">FIND US</span>
+      </h2>
+      <div class="owl-carousel card-slider3 owl-theme mt-4 arrow-white">
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_people.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Be part of<br />the Altron Team
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="#" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">Career Desk</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_mail.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Need more<br />information
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="mailto:info@altron.com" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">info@altron.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_phone.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Need to talk to us?<br />Call Us Now
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="tel:+2711 6453600" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">+2711 6453600</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_location.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Need to find<br />Direction
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="#" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">Google Maps</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_people.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Be part of<br />the Altron Team
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="#" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">Career Desk</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_mail.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Need more<br />information
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="mailto:info@altron.com" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">info@altron.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_phone.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Need to talk to us?<br />Call Us Now
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="tel:+2711 6453600" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">+2711 6453600</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide-container">
+          <div class="slide-card border border-secondary">
+            <div class="slide-card-date text-muted-color"></div>
+            <div class="slide-card-content">
+              <img src="assets/images/icon_location.svg" width="54" height="54" class="mb-3" alt="" />
+              <p class="fw-semi-bold text-white-color text-center re-text">
+                Need to find<br />Direction
+              </p>
+            </div>
+            <div class="slide-card-btn-section text-center">
+              <a href="#" class="
+                    link
+                    sm-text
+                    text-secondary-color text-white-hover
+                    fw-bold
+                  ">Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card-section article-section" id="operations">
+    <div class="container">
+      <div class="card-container mx-0">
+        <div class="row">
+          <div class="col-12 bg-white">
+            <div class="card-blocks">
+              <div class="sub-heading text-primary-color text-center">
+                ALTRON OPERATIONS
+              </div>
+              <h2 class="secondary-font text-center fw-bold title-text-xl">
+                <span class="text-secondary-color">NEED MORE</span>
+                <span class="text-primary-color">INFORMATION</span>
+                <span class="text-primary-color">about a specific operation</span>
+              </h2>
+              <div class="article-filter">
+                <ul>
+                  <li class="active">
+                    <button class="filter-button" data-filter="digital">
+                      Digital Transformation
+                    </button>
+                  </li>
+                  <li>
+                    <button class="filter-button" data-filter="platform">
+                      Own Platforms
+                    </button>
+                  </li>
+                  <li>
+                    <button class="filter-button" data-filter="services">
+                      Managed Services
+                    </button>
+                  </li>
+                  <li>
+                    <button class="filter-button" data-filter="all">
+                      View All
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="article-grid">
+                <div class="article-item digital">
+                  <div class="article-item-img">
+                    <div class="ratio ratio-4x3">
+                      <video id="my-video" class="video-js" controls preload="auto"
+                        poster="assets/images/video_thumb.jpg" data-setup="{}">
+                        <source src="assets/video/video.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                          To view this video please enable JavaScript, and
+                          consider upgrading to a web browser that
+                          <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                      </video>
+                    </div>
+                  </div>
+                  <div class="article-item-content">
+                    <p class="article-subheading">Add Your Description</p>
+                    <h3 class="article-title">
+                      <span class="text-primary-color">Section Title Goes</span><span
+                        class="text-secondary-color">Here</span>
+                    </h3>
+                    <p>
+                      <a href="https://alronopco.co.za/" target="_blank" class="article-website">www.alronopco.co.za</a>
+                    </p>
+                    <div class="article-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui
+                      </p>
+                    </div>
+                    <p>
+                      <a href="#" class="link text-secondary-color text-primary-hover">Click Through To Opco</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="article-item platform" style="display: none">
+                  <div class="article-item-img">
+                    <img src="assets/images/altron_brand_evo_managed_solutions.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="article-item-content">
+                    <p class="article-subheading">Add Your Description</p>
+                    <h3 class="article-title">
+                      <span class="text-primary-color">Example Of A Very Long Section Title Goes</span><span
+                        class="text-secondary-color">Here</span>
+                    </h3>
+                    <p>
+                      <a href="https://alronopco.co.za/" target="_blank" class="article-website">www.alronopco.co.za</a>
+                    </p>
+                    <div class="article-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="#" class="link text-secondary-color text-primary-hover">Click Through To Opco</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="article-item services" style="display: none">
+                  <div class="article-item-img">
+                    <img src="assets/images/example2.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="article-item-content">
+                    <p class="article-subheading">Add Your Description</p>
+                    <h3 class="article-title">
+                      <span class="text-primary-color">Example Of A Very Long Section Title Goes</span><span
+                        class="text-secondary-color">Here</span>
+                    </h3>
+                    <p>
+                      <a href="https://alronopco.co.za/" target="_blank" class="article-website">www.alronopco.co.za</a>
+                    </p>
+                    <div class="article-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="#" class="link text-secondary-color text-primary-hover">Click Through To Opco</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="article-item digital">
+                  <div class="article-item-img">
+                    <img src="assets/images/example.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="article-item-content">
+                    <p class="article-subheading">Add Your Description</p>
+                    <h3 class="article-title">
+                      <span class="text-primary-color">Example Of A Very Long Section Title Goes</span><span
+                        class="text-secondary-color">Here</span>
+                    </h3>
+                    <p>
+                      <a href="https://alronopco.co.za/" target="_blank" class="article-website">www.alronopco.co.za</a>
+                    </p>
+                    <div class="article-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="#" class="link text-secondary-color text-primary-hover">Click Through To Opco</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="article-item platform" style="display: none">
+                  <div class="article-item-img">
+                    <img src="assets/images/altron_brand_evo_people_solutions.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="article-item-content">
+                    <p class="article-subheading">Add Your Description</p>
+                    <h3 class="article-title">
+                      <span class="text-primary-color">Example Of A Very Long Section Title Goes</span><span
+                        class="text-secondary-color">Here</span>
+                    </h3>
+                    <p>
+                      <a href="https://alronopco.co.za/" target="_blank" class="article-website">www.alronopco.co.za</a>
+                    </p>
+                    <div class="article-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="#" class="link text-secondary-color text-primary-hover">Click Through To Opco</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="article-item services" style="display: none">
+                  <div class="article-item-img">
+                    <img src="assets/images/altron_brand_system.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="article-item-content">
+                    <p class="article-subheading">Add Your Description</p>
+                    <h3 class="article-title">
+                      <span class="text-primary-color">Example Of A Very Long Section Title Goes</span><span
+                        class="text-secondary-color">Here</span>
+                    </h3>
+                    <p>
+                      <a href="https://alronopco.co.za/" target="_blank" class="article-website">www.alronopco.co.za</a>
+                    </p>
+                    <div class="article-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <p>
+                      <a href="#" class="link text-secondary-color text-primary-hover">Click Through To Opco</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="full-banner-section full-banner-section-md bg-attach-none"
+    style="background-image: url(assets/images/delivering_best_in_class.jpg)">
+    <div class="container-fluid">
+      <h2 class="secondary-font text-center mb-0 fw-bold title-text-xl">
+        <span class="text-secondary-color">Delivering</span>
+        <span class="text-white-color">best-in-class</span>
+        <span class="text-white-color">customer service</span>
+      </h2>
+    </div>
+  </section>
+  <footer id="footer"></footer>
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="
+          modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable
+        ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="formModalLabel">Preference Center</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="card-blocks form-box">
+              <div class="row g-2">
+                <div class="col-12 d-flex">
+                  <input class="form-control title-form" id="title" placeholder="Mss" />
+                  <input class="form-control" id="name" placeholder="Name and Surname" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="company" placeholder="Company" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="job" placeholder="Job Title" />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" id="email" placeholder="Email*" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="phone" placeholder="Phone" />
+                </div>
+                <div class="col-12">
+                  <p class="sm-text text-secondary-color">
+                    Communication Type
+                  </p>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                          value="option1" /><label class="form-check-label" for="inlineRadio1">E-mail</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                          value="option2" /><label class="form-check-label" for="inlineRadio2">Whatsapp</label>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                          value="option3" /><label class="form-check-label" for="inlineRadio3">SMS</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="operation" placeholder="Altron Operations" />
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" id="preference"
+                    placeholder="Personalise your Communication Preferences" />
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" id="message" placeholder="Leave your message here" rows="5"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="conset" /><label
+                      class="form-check-label xs-text" for="conset">By ticking this box, you provide consent to receive
+                      electronic marketing communication on Altron Solutions
+                      and Services and the solutions of our key strategic
+                      partners. You may personalize your subscriptions based
+                      on your interests.</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="privacy" /><label
+                      class="form-check-label xs-text" for="privacy">This form collects your contact information so
+                      that we
+                      are able to respond to your query. See our Privacy
+                      policy for the full story on how we protect and manage
+                      your submitted data.</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <img src="assets/images/recaptcha.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+            Submit Information
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/script/jquery-3.6.0.js"></script>
+  <script src="assets/script/vendors/bootstrap/bootstrap.bundle.js"></script>
+  <script src="assets/script/vendors/owlcarousel/owl.carousel.js"></script>
+  <script src="assets/script/vendors/videojs/video.min.js"></script>
+  <script src="assets/script/main.js"></script>
+</body>
+
+</html>

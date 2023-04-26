@@ -1,0 +1,76 @@
+.btn {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  &:focus {
+    box-shadow: 0 0 0 0rem rgba(70, 166, 190, 0);
+  }
+}
+
+.btn-outline-primary {
+  color: $primary;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $primary;
+  }
+}
+
+.btn-secondary {
+  color: $white;
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+}
+.btn-outline-secondary {
+  color: $secondary;
+  &:hover,
+  &:focus {
+    color: $primary;
+    background-color: $secondary;
+  }
+}
+
+.btn-light {
+  color: $secondary;
+  background-color: $white;
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
+}
+.btn-outline-light {
+  color: $white;
+  border-color: $white;
+  &:hover,
+  &:focus {
+    color: $primary;
+    border-color: $muted;
+  }
+}
+.round-btn {
+  height: 104px;
+  width: 104px;
+  color: $white;
+  font-family: $seco-font;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 700;
+  border-radius: 100%;
+  background-color: $secondary;
+  border: 1px solid $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &:hover {
+    background-color: $primary;
+  }
+  @include media-breakpoint-down(md) {
+    height: 96px;
+    width: 96px;
+    font-size: 0.8rem;
+  }
+}

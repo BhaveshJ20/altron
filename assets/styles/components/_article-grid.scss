@@ -1,0 +1,240 @@
+.article {
+  &-filter {
+    margin-bottom: 1.75rem;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        &:not(:last-child) {
+          &::after {
+            content: "|";
+            color: $muted;
+            padding: 0 4px;
+          }
+        }
+        .filter-button {
+          padding: 0;
+          border: 0;
+          outline: 0;
+          background-color: transparent;
+          color: $muted;
+          font-size: 1.125rem;
+          @include media-breakpoint-down(md) {
+            font-size: 1rem;
+          }
+          &:hover,
+          &:focus {
+            color: $secondary;
+          }
+        }
+        &.active {
+          .filter-button {
+            color: $secondary;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &-grid {
+    -moz-column-count: 3;
+    column-count: 3;
+    gap: 1.875rem;
+    @include media-breakpoint-down(lg) {
+      -moz-column-count: 2;
+      columns: 2;
+    }
+    @include media-breakpoint-down(md) {
+      -moz-column-count: 1;
+      columns: 1;
+    }
+  }
+  &-item {
+    margin-bottom: 30px;
+    column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    &-img {
+      min-height: 135px;
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+    &-content {
+      margin-top: 1.875rem;
+      .link {
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+    }
+  }
+  &-subheading {
+    color: $muted;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: none;
+    margin-bottom: 0.25rem;
+  }
+  &-website {
+    color: $primary;
+    font-size: 0.875rem;
+    font-weight: 600;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  &-description {
+    color: $primary;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    margin: 1.5rem 0;
+    p {
+      line-height: 1.625rem;
+    }
+  }
+  &-listing {
+    .slide-card {
+      padding: 1.75rem 1.75rem;
+    }
+    .slide-card-date {
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+    .slide-card-content {
+      margin-bottom: 1.75rem;
+      h3 {
+        line-height: 1;
+      }
+    }
+  }
+  &-details {
+    &-content {
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        text-transform: none;
+      }
+      h4 {
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+      }
+      ol,
+      ul {
+        margin: 0;
+        padding-left: 1rem;
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &-section {
+    .card-blocks {
+      padding: 3.5rem 2.5rem;
+    }
+    &-operation {
+      .card-blocks {
+        padding: 2.5rem;
+      }
+    }
+  }
+}
+
+.slide-card-btn-section {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    li {
+      width: calc(50% - 0.5rem);
+      margin-right: 0.5rem;
+      a {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.share-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+  }
+  .social-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-left: 1rem;
+      a {
+        color: $primary;
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  .page-item {
+    display: flex;
+    align-items: center;
+    color: $muted;
+    .page-link {
+      border: 0px;
+      padding: 0.375rem 0;
+      color: $muted;
+      &:hover {
+        color: $secondary;
+        background-color: transparent;
+      }
+    }
+    &.active {
+      .page-link {
+        color: $secondary;
+        background-color: transparent;
+      }
+    }
+    &:not(:first-child):not(:last-child):not(:nth-last-child(2)) {
+      &::after {
+        content: "|";
+        padding: 0 0.375rem;
+      }
+    }
+    &:first-child {
+      margin-right: 1.625rem;
+    }
+    &:last-child {
+      margin-left: 1.625rem;
+    }
+  }
+}

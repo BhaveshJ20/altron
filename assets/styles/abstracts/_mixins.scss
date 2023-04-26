@@ -1,0 +1,29 @@
+/* Mixin 15 to 50 */
+$max: 50;
+$offset: 5;
+$startFrom: 0;
+$unit: 'px';
+@mixin list-loop($className, $styleName, $important) {
+  $i: $startFrom;
+  @while $i <= $max {
+    #{$className + $i} { 
+      #{$styleName}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+.list-unstyled {
+  @include list-unstyled();
+}
+
+.lead {
+  @include font-size($lead-font-size);
+  font-weight: $lead-font-weight;
+}
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: $font-weight-normal;
+}

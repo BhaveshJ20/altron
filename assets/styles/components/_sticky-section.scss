@@ -1,0 +1,142 @@
+.sticky {
+  &-section {
+    padding: 0.625rem 0.625rem 1rem 1.5rem;
+    // position: fixed;
+    // top: 136px;
+    // margin-top: -54px;
+    // left: 0rem;
+    max-width: 366px;
+    z-index: 99;
+    transition: all 0.2s ease-in-out;
+    display: none;
+    @include media-breakpoint-down(xl) {
+      max-width: 320px;
+      // top: 134px;
+    }
+    @include media-breakpoint-down(lg) {
+      position: relative;
+      top: unset;
+      left: unset;
+      margin: 0 1rem;
+      padding: 1.5rem;
+      display: none;
+    }
+    .social-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include media-breakpoint-down(lg) {
+        display: flex;
+      }
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0.75rem;
+          @include media-breakpoint-down(lg) {
+            margin-right: 0.78rem;
+          }
+        }
+        @include media-breakpoint-down(lg) {
+          margin-top: 1rem;
+        }
+      }
+      a {
+        color: $white;
+        font-size: 1.125rem;
+        line-height: 1;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  &-container {
+    padding-top: 114px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 0;
+    }
+    h2 {
+      font-family: $seco-font;
+      font-size: 2.375rem;
+      line-height: 2.125rem;
+      margin-bottom: 0rem;
+      @include media-breakpoint-down(xl) {
+        font-size: 2.05rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2.15rem;
+      }
+    }
+    h3 {
+      font-family: $seco-font;
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 0rem;
+      @include media-breakpoint-down(xl) {
+        font-size: 2.15rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2.25rem;
+      }
+    }
+    h4 {
+      font-family: $seco-font;
+      font-size: 2.125rem;
+      line-height: 1;
+      margin-bottom: 0rem;
+      @include media-breakpoint-down(xl) {
+        font-size: 1.8rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2rem;
+      }
+    }
+    .btn-call {
+      background-color: $tritary;
+      color: $white;
+      padding: 0.5rem;
+      font-weight: 700;
+      text-align: right;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 0 0 auto;
+      width: auto;
+      font-size: 1rem;
+      &:hover {
+        background-color: $primary;
+      }
+      &::before {
+        content: ">";
+        font-weight: 400;
+        flex: 0 0 auto;
+        margin-right: 0.5rem;
+        line-height: 21px;
+        height: 20px;
+      }
+      &::after {
+        content: "";
+        flex: 1 0 0%;
+        border-top: 1px dashed #fff;
+        height: 1px;
+        order: -1;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 0.875rem;
+      }
+    }
+    p {
+      font-size: 0.5rem;
+      line-height: 1rem;
+      color: $white;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.body-scroll {
+  .sticky-section {
+    // top: 78px;
+  }
+}

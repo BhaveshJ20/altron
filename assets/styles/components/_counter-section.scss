@@ -1,0 +1,41 @@
+.counter {
+  &-section {
+    ul {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+      @include media-breakpoint-down(sm) {
+        justify-content: center;
+      }
+      li {
+        text-align: center;
+        margin: 1.25rem;
+        @include media-breakpoint-down(lg) {
+          width: calc(50% - 2.5rem);
+        }
+        h3 {
+          margin-top: 1.75rem;
+          margin-bottom: 1.5rem;
+          font-size: 2.0625rem;
+          font-weight: normal;
+        }
+        h4 {
+          font-weight: 700;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &-content-detail {
+    columns: 2;
+    column-gap: 1.75rem;
+    @include media-breakpoint-down(sm) {
+      columns: 1;
+    }
+  }
+}

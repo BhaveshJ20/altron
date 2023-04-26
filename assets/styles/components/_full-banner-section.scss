@@ -1,0 +1,47 @@
+.full-banner-section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 4.375rem 0;
+  &-xl {
+    padding: 9.375rem 0;
+  }
+  &-md {
+    padding: 9.375rem 0;
+  }
+}
+.bg-attach-none {
+  background-attachment: scroll;
+}
+
+.slider-banner-section {
+  display: flex;
+  .owl-carousel {
+    padding: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  .slide-container {
+    max-width: 100%;
+    padding: 9.375rem 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include media-breakpoint-down(lg) {
+      padding: 9.375rem 2.5rem;
+    }
+  }
+  .owl-theme .owl-nav {
+    z-index: 1;
+    @include media-breakpoint-down(lg) {
+      padding: 0 1rem;
+    }
+  }
+  .owl-theme .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6.375rem;
+  }
+}

@@ -1,0 +1,140 @@
+.text-white-color {
+  color: $white;
+}
+.text-white-hover {
+  // color: inherit;
+  &:hover {
+    color: $white;
+  }
+}
+.border-text-white {
+  -webkit-text-stroke: 1px $white;
+  text-stroke: 1px $white;
+  color: transparent;
+  letter-spacing: 0.75px;
+}
+.bg-white {
+  background-color: $white;
+}
+
+.text-primary-color {
+  color: $primary;
+}
+.text-primary-hover {
+  // color: inherit;
+  &:hover {
+    color: $primary;
+  }
+}
+.border-text-primary {
+  -webkit-text-stroke: 1px $primary;
+  text-stroke: 1px $primary;
+  color: transparent;
+  letter-spacing: 0.75px;
+}
+.bg-primary {
+  background-color: $primary;
+}
+
+.text-secondary-color {
+  color: $secondary;
+}
+.text-secondary-hover {
+  // color: inherit;
+  &:hover {
+    color: $secondary;
+  }
+}
+.border-text-secondary {
+  -webkit-text-stroke: 1px $secondary;
+  text-stroke: 1px $secondary;
+  color: transparent;
+  letter-spacing: 0.75px;
+}
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.text-tritary {
+  color: $tritary;
+}
+.text-tritary-hover {
+  // color: inherit;
+  &:hover {
+    color: $tritary;
+  }
+}
+.border-text-tritary {
+  -webkit-text-stroke: 1px $tritary;
+  text-stroke: 1px $tritary;
+  color: transparent;
+  letter-spacing: 0.75px;
+}
+.bg-tritary {
+  background-color: $tritary;
+}
+
+.text-base-color {
+  color: $base-color;
+}
+.text-base-hover {
+  // color: inherit;
+  &:hover {
+    color: $base-color;
+  }
+}
+.border-text-base-color {
+  -webkit-text-stroke: 1px $base-color;
+  text-stroke: 1px $base-color;
+  color: transparent;
+  letter-spacing: 0.75px;
+}
+.bg-base-color {
+  background-color: $base-color;
+}
+
+.base-font {
+  font-family: $base-font;
+}
+.secondary-font {
+  font-family: $seco-font;
+}
+
+.text-muted-color {
+  color: $muted;
+}
+.text-muted-hover {
+  // color: inherit;
+  &:hover {
+    color: $muted;
+  }
+}
+.border-text-muted {
+  -webkit-text-stroke: 1px $muted;
+  text-stroke: 1px $muted;
+  color: transparent;
+  letter-spacing: 0.75px;
+}
+.bg-muted {
+  background-color: $muted;
+}
+
+.border-white-color {
+  border: 1px solid $white;
+}
+
+.border-primary-color {
+  border: 1px solid $primary;
+}
+.border-secondary-color {
+  border: 1px solid $secondary;
+}
+.border-tritary-color {
+  border: 1px solid $tritary;
+}
+.border-base-color {
+  border: 1px solid $base-color;
+}
+.border-muted-color {
+  border: 1px solid $muted;
+}

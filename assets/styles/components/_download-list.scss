@@ -1,0 +1,124 @@
+.download {
+  &-list {
+    margin-top: 1rem;
+    ol {
+      margin: 0;
+      padding: 0;
+      columns: 2;
+      gap: 3rem;
+      font-size: 0.875rem;
+      list-style: none;
+      counter-reset: my-awesome-counter;
+      position: relative;
+      @include media-breakpoint-down(lg) {
+        columns: 1;
+      }
+      &::after {
+        content: "";
+        border-bottom: 1px solid $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+      }
+      li {
+        border-bottom: 1px solid $muted;
+        display: flex;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+        counter-increment: my-awesome-counter;
+        break-inside: avoid-column;
+        &::before {
+          content: counter(my-awesome-counter) ". ";
+          margin-right: 0.5rem;
+        }
+
+        span {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    &-single {
+      ol {
+        columns: 1;
+        gap: 0rem;
+      }
+    }
+  }
+  &-link {
+    font-size: 1.875rem;
+    line-height: 1;
+    color: $muted;
+    margin-left: auto;
+    align-self: center;
+    &:hover {
+      color: $primary;
+    }
+  }
+  &-tabs {
+    .owl-carousel {
+      padding: 0 2rem;
+    }
+    .slide-card-date {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: $muted;
+      margin-bottom: 1rem;
+    }
+    .slide-card-content {
+      margin-bottom: 1.5rem;
+    }
+    .owl-theme .owl-nav {
+      padding: 0;
+    }
+    .slide-container {
+      .slide-card {
+        background-color: $white;
+      }
+      &.active {
+        .slide-card {
+          background-color: $secondary;
+          color: $white;
+          .slide-card-date {
+            color: $white;
+          }
+          .btn-secondary {
+            border-color: $white;
+          }
+        }
+      }
+      .explore-btn {
+        span {
+          display: block;
+          transition: all 0.2s ease-in-out;
+        }
+        &::after {
+          content: "";
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+    .current {
+      .slide-card {
+        background-color: $secondary;
+        color: $white;
+        .slide-card-date {
+          color: $white;
+        }
+        .btn-secondary {
+          border-color: $white;
+        }
+        .explore-btn {
+          span {
+            display: none;
+          }
+          &::after {
+            content: "Currently viewing";
+          }
+        }
+      }
+    }
+  }
+}

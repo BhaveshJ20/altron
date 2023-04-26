@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $base-font;
+  position: relative;
+  transform: perspective(-1px);
+  color: $base-color;
+  line-height: 1.25rem;
+  background-color: #f4f4f4;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  // padding-top: 54px;
+  overflow-x: hidden;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: $white;
+  background: $primary;
+}
+
+::selection {
+  color: $white;
+  background: $primary;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.link {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+  &::after {
+    content: ">";
+    margin-left: 0.2rem;
+    display: inline-block;
+  }
+}
+hr {
+  background-color: $muted;
+  margin: 1.875rem 0;
+  opacity: 1;
+}
+@-moz-document url-prefix() {
+  hr:not([size]) {
+    height: 2px;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba($muted, 0.1);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+}
+
+ol,
+ul {
+  padding-left: 1.2rem;
+}
